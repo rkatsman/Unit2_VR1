@@ -646,6 +646,7 @@ GameObject:
   - component: {fileID: 898544106}
   - component: {fileID: 898544105}
   - component: {fileID: 898544109}
+  - component: {fileID: 898544110}
   m_Layer: 0
   m_Name: Square
   m_TagString: Untagged
@@ -778,6 +779,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 28b3514fddd6a714c890d9f7d1f641da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &898544110
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 898544104}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bea6a0fef34da2a418587d336ca80739, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1064420481
@@ -920,6 +933,7 @@ GameObject:
   - component: {fileID: 1735463489}
   - component: {fileID: 1735463493}
   - component: {fileID: 1735463494}
+  - component: {fileID: 1735463495}
   m_Layer: 0
   m_Name: player-idle-1
   m_TagString: Untagged
@@ -1050,7 +1064,7 @@ Transform:
   m_GameObject: {fileID: 1735463488}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.722, y: 0.686, z: 0}
-  m_LocalScale: {x: 2.5657873, y: 2.6636505, z: 0.6814}
+  m_LocalScale: {x: 3, y: 3, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -1077,5 +1091,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 28b3514fddd6a714c890d9f7d1f641da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1735463495
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1735463488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27b5231a17bb86d4db662dab60326d8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
