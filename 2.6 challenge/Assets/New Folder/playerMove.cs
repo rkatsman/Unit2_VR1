@@ -25,10 +25,10 @@ public class playerMove : MonoBehaviour
         xMove.y = upDown;
         player.Translate(xMove*Time.deltaTime); 
         if(rightLeft > 0){
-            player.localScale= new Vector3(3.0f, 3.0f, 0.7f);
+            player.localScale= new Vector3(5.0f, 5.0f, 0.7f);
         }
         if(rightLeft < 0){
-            player.localScale= new Vector3(-3.0f, 3.0f, 0.7f);
+            player.localScale= new Vector3(-5.0f, 5.0f, 0.7f);
         }
     }
 }
