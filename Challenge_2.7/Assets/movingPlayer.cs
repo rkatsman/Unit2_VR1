@@ -9,7 +9,9 @@ public class movingPlayer : MonoBehaviour
     Transform player;
     public Animator animator;
      Rigidbody2D playerBody;
-      public float thrust = 10.0f;
+      public float thrust = 40f;
+      public float speedObject = 5f;
+      
 
     // Start is called before the first frame update
     void Start()
@@ -25,7 +27,7 @@ public class movingPlayer : MonoBehaviour
     {
         float rightLeft = Input.GetAxis("Horizontal");
         float upDown = Input.GetAxis("Vertical");
-        xMove.x = rightLeft*thrust;
+        xMove.x = rightLeft*speedObject;
         //xMove.y = upDown;
         player.Translate(xMove*Time.deltaTime); 
         if(rightLeft > 0){
@@ -43,10 +45,11 @@ public class movingPlayer : MonoBehaviour
         */
         if (upDown > 0)
         {
-           playerBody.AddForce(transform.up * thrust);
+           if(playerBody.velocity.y == 0 ){
+               playerBody.AddForce(transform.up * thrust);
+           }
 
-        }else if(upDown < 0){
-            
+        
         }
     }
 }
