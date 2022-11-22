@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - acorn
+  - enemy
   layers:
   - Default
   - TransparentFX

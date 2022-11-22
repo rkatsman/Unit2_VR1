@@ -9,7 +9,7 @@ public class playerWalking : MonoBehaviour
     Transform player;
     public Animator animator;
     Rigidbody2D playerBody;
-      public float thrust = 45f;
+      public float thrust = 51f;
       public float speedObject = 5f;
     // Start is called before the first frame update
     void Start()
@@ -43,15 +43,17 @@ public class playerWalking : MonoBehaviour
         animator.SetFloat("up", Mathf.Abs(upDown));
 
     }
-    /* void OnCollisionEnter2D(Collision2D collision)
+    void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "acorn")
+        /*if (collision.gameObject.tag == "enemy")
         {
-            Destroy(gameObject);
-        }
-    }*/
+            
+        Destroy(gameObject);
+        }*/
+    }
     void OnBecameInvisible()
     {
+        Lives.enemy = 0;
         Destroy(gameObject);
     }
 }
