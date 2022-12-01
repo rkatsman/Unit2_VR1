@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class UiCode : MonoBehaviour
 { 
@@ -16,9 +17,14 @@ public class UiCode : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Debug.Log(acorns);
         acornText.text = "Acorns : " + acorns;
-        
-        
+        if(acorns == 2)
+        {
+            Debug.Log(acorns);
+        SceneManager.LoadScene("win");
+        }
+        //jj
     }
     void OnCollisionEnter2D(Collision2D col){
         if(col.gameObject.tag == "acorn"){
