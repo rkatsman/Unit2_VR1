@@ -22,7 +22,7 @@ public class Lives : MonoBehaviour
         
         if(enemy == 0)
         {
-        SceneManager.LoadScene("GameOver");
+        SceneManager.LoadScene("test");
         }
     }
     void OnCollisionEnter2D(Collision2D col){

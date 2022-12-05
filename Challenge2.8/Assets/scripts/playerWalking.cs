@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class playerWalking : MonoBehaviour
 {
@@ -53,7 +54,8 @@ public class playerWalking : MonoBehaviour
     }
     void OnBecameInvisible()
     {
-        Lives.enemy = 0;
-        Destroy(gameObject);
+        SceneManager.LoadScene("test");
+    Lives.enemy = 0;
+        //Destroy(gameObject);
     }
 }

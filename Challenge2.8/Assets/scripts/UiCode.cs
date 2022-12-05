@@ -19,12 +19,13 @@ public class UiCode : MonoBehaviour
     {
         Debug.Log(acorns);
         acornText.text = "Acorns : " + acorns;
-        if(acorns == 2)
+        
+        if(acorns == 12)
         {
             Debug.Log(acorns);
         SceneManager.LoadScene("win");
         }
-        //jj
+        
     }
     void OnCollisionEnter2D(Collision2D col){
         if(col.gameObject.tag == "acorn"){
