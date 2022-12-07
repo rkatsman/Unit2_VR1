@@ -8,8 +8,8 @@ public class gameOVer : MonoBehaviour
     public void GAMEOVER()
     {
     SceneManager.LoadScene("menu");
-    //GameObject.FindGameObjectsWithTag("Player");
+    GameObject.FindGameObjectsWithTag("Player");
     
     }
-    public static GameObject.FindGameObjectsWithTag("Player");
+    //public static FindObjectOfType( player);
 }
