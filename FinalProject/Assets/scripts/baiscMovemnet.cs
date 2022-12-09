@@ -43,4 +43,11 @@ public class baiscMovemnet : MonoBehaviour
         animator.SetFloat("run", Mathf.Abs(rightLeft));
         animator.SetFloat("up", Mathf.Abs(upDown));
     }
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "spike")
+        {
+            Destroy(gameObject);
+        }
+    }
 }
