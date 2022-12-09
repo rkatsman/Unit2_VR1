@@ -8,8 +8,8 @@ public class baiscMovemnet : MonoBehaviour
     Transform player;
     public Animator animator;
     Rigidbody2D playerBody;
-    public float thrust = 51f;
-    public float speedObject = 5f;
+    public float thrust = 250f;
+    public float speedObject = 2f;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,12 +23,14 @@ public class baiscMovemnet : MonoBehaviour
     {
         float rightLeft = Input.GetAxis("Horizontal");
         float upDown = Input.GetAxis("Vertical");
+        
         xMove.x = rightLeft *speedObject;
-        if (upDown > 0)
+        if ( Input.GetKeyDown(KeyCode.UpArrow))
         {
            if(playerBody.velocity.y == 0 ){
                playerBody.AddForce(transform.up * thrust);
            }
+
         }
         //xMove.y = upDown*thrust;
         player.Translate(xMove*Time.deltaTime); 
