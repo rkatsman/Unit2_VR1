@@ -10,6 +10,7 @@ public class baiscMovemnet : MonoBehaviour
     Rigidbody2D playerBody;
     public float thrust = 250f;
     public float speedObject = 2f;
+    public static int health = 6;
     // Start is called before the first frame update
     void Start()
     {
@@ -47,7 +48,15 @@ public class baiscMovemnet : MonoBehaviour
     {
         if (collision.gameObject.tag == "spike")
         {
-            Destroy(gameObject);
+            health = health - 1; 
+        }
+        if (collision.gameObject.tag == "enime")
+        {
+            health = health - 2; 
+        }
+        if (collision.gameObject.tag == "peng")
+        {
+            health = health - 3; 
         }
     }
 }
