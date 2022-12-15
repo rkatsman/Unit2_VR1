@@ -4,13 +4,13 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 
-public class nextlevel : MonoBehaviour
+public class WON : MonoBehaviour
 {
    void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Player")
         {
-            SceneManager.LoadScene("scene2");
+            SceneManager.LoadScene("WON");
         }
         
     }

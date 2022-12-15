@@ -10,6 +10,14 @@ public class gameover : MonoBehaviour
     {
     SceneManager.LoadScene("scene1");
     GameObject.FindGameObjectsWithTag("Player");
+    baiscMovemnet.health = 6;
     
     }
+    public void WON()
+    {
+    SceneManager.LoadScene("scene1");
+    GameObject.FindGameObjectsWithTag("Player");
+    
+    }
+
 }

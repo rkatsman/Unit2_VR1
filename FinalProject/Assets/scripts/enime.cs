@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class enime : MonoBehaviour
 {
@@ -37,4 +38,9 @@ public class enime : MonoBehaviour
             xMove = new Vector2(1.0f,0.0f);
         }
     }
+     
+    
+       
+    
+   
 }

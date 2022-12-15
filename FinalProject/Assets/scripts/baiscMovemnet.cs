@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class baiscMovemnet : MonoBehaviour
 {
@@ -43,6 +44,10 @@ public class baiscMovemnet : MonoBehaviour
         }
         animator.SetFloat("run", Mathf.Abs(rightLeft));
         animator.SetFloat("up", Mathf.Abs(upDown));
+        if(baiscMovemnet.health == 0)
+       {
+           SceneManager.LoadScene("gameover");
+       }
     }
     void OnCollisionEnter2D(Collision2D collision)
     {
@@ -52,11 +57,11 @@ public class baiscMovemnet : MonoBehaviour
         }
         if (collision.gameObject.tag == "enime")
         {
-            health = health - 2; 
+            health = health - 1; 
         }
         if (collision.gameObject.tag == "peng")
         {
-            health = health - 3; 
+            SceneManager.LoadScene("gameover");
         }
     }
 }

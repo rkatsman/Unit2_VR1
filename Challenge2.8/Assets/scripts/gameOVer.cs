@@ -11,5 +11,11 @@ public class gameOVer : MonoBehaviour
     GameObject.FindGameObjectsWithTag("Player");
     
     }
+    public void WON()
+    {
+    SceneManager.LoadScene("scene1");
+    GameObject.FindGameObjectsWithTag("Player");
+    
+    }
     //public static FindObjectOfType( player);
 }

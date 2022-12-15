@@ -9,6 +9,7 @@ TagManager:
   - box
   - box2
   - peng
+  - nextLevel
   layers:
   - Default
   - TransparentFX
